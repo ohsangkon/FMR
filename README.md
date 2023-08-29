@@ -6,5 +6,5 @@ We propose a novel approach that utilizes nonparametric Gaussian scale mixture e
 # NGSM.R 
 Basic code for finite mixture of regressions with nonparametric Gaussian scale mixture errors.
 
-# NGSM(multiple initial values)
+# NGSM(multiple initial values).R
 Based on NGSM.R, we choose the solution with the highest d-deleted log-likelihood to prevent singular or spurious solutions.
