@@ -271,7 +271,7 @@ fmix_reg_scalemix=function(formula,data, m,p=NULL,beta=NULL,con=NULL,ini_sigma=N
  
   n=length(y)
   
-	# step2: E-step in the outer EM algorithm and M-step for pi
+	# step2: E-step in the outer EM algorithm and CM-step for pi
 
   maxQ=50;Q=zeros(maxQ,(2*m))
   Q[1,]=tmpQ
@@ -304,7 +304,7 @@ fmix_reg_scalemix=function(formula,data, m,p=NULL,beta=NULL,con=NULL,ini_sigma=N
       }
       vw=z*w
       
-	#step3: M-step for beta
+	#step3: CM-step for beta
 
       for (h in 1:m){
 	   	beta[,h]= beta_esti(x, diag(vw[,h]), y)
@@ -313,6 +313,7 @@ fmix_reg_scalemix=function(formula,data, m,p=NULL,beta=NULL,con=NULL,ini_sigma=N
     }
 
 
+	  # CM-step for Q
     tmp_lik=zeros(n,1)
 
 	 numer <- matrix(0, nrow = nrow(x), ncol = m)
@@ -370,12 +371,12 @@ fmix_reg_scalemix=function(formula,data, m,p=NULL,beta=NULL,con=NULL,ini_sigma=N
 		 max_order <- order(I, decreasing = T)
 		dim <- (m-1)*(ncol(x)) #* (m-1)
 
-			mix<-list()  #°¢ expertsÀÇ È®·ü¹Ðµµ°ª  (ºÐÀÚ)
+			mix<-list()  #ê° expertsì˜ í™•ë¥ ë°€ë„ê°’  (ë¶„ìž)
 			for(h in 1 : m){
 				mix[[h]] <- p[h]*numer[max_order[1:dim],h]
 			}
 
-			mix_Sum <- matrix(rep(0,dim),nrow= dim)  #°¢ expertsÀÇ È®·ü¹Ðµµ°ªÀÇ ÇÕ (ºÐ¸ð)
+			mix_Sum <- matrix(rep(0,dim),nrow= dim)  #ê° expertsì˜ í™•ë¥ ë°€ë„ê°’ì˜ í•© (ë¶„ëª¨)
 			for(h in 1 : m){
 				mix_Sum <- mix_Sum + mix[[h]]
 			}
