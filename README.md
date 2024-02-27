@@ -20,7 +20,7 @@ Arguments
 6. con: minimum of scale
 7. ini_sigma: initial value of sigma
 8. maxitr: maximum iteration
-9. tRatio: trimmed ratio for trimmed likelihood estimator. (trimmed likelihood estimators are used for initial value if initial values are not specified.) 
+9. tRatio: trimmed ratio for trimmed likelihood estimator. (trimmed likelihood estimators are used for initial value if initial values are not specified.)
 
 Values
 
@@ -40,3 +40,7 @@ Values
 
 # NGSM(multiple initial values).R
 Based on NGSM.R, fmix_reg_scalemix_iter function chooses the solution with the highest d-deleted log-likelihood to prevent singular or spurious solutions.
+
+Arguments
+
+iter: maximum iteration
