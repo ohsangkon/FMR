@@ -44,3 +44,10 @@ Based on NGSM.R, fmix_reg_scalemix_iter function chooses the solution with the h
 Arguments
 
 iter: maximum iteration
+
+# mtcars analysis with NGSM.R
+Motor trend car road tests (mtcars) dataset analysis using linear regression under NGSM errors
+
+# Hitters dataset analysis with NGSM.R
+Hitters dataset analysis using linear regression under NGSM errors
+hitters_names.Rdata should be loaded.
