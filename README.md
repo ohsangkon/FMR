@@ -12,31 +12,31 @@ fmix_reg_scalemix function is the main function, and others are required to save
 
 Arguments
 
-formula: formula between the response and covariates
-data: input data
-m: the number of components
-p: mixing proportion
-beta: regression coefficients
-con: minimum of scale 
-ini_sigma: initial value of sigma
-maxitr: maximum iteration
-tRatio: trimmed ratio for trimmed likelihood estimator. (trimmed likelihood estimators are used for initial value if initial values are not specified.) 
+1. formula: formula between the response and covariates
+2. data: input data
+3. m: the number of components
+4. p: mixing proportion
+5. beta: regression coefficients
+6. con: minimum of scale
+7. ini_sigma: initial value of sigma
+8. maxitr: maximum iteration
+9. tRatio: trimmed ratio for trimmed likelihood estimator. (trimmed likelihood estimators are used for initial value if initial values are not specified.) 
 
 Values
 
-p: mixing proportion
-beta0: initial value for regression coefficients
-beta: regression coefficients
-Q: support points for sigma
-con: minimum of scale 
-loglik: log-likelihood
-likep: p-deleted log-likelihood
-AIC: Akaike information criterion
-BIC: Bayesian information criterion
-ICL: Integrated Complete-data Likelihood
-Conv: convergence or not
-z: posterior probabilities
-cluster: clustering results based on posterior probabilities
+1. p: mixing proportion
+2. beta0: initial value for regression coefficients
+3. beta: regression coefficients
+4. Q: support points for sigma
+5. con: minimum of scale
+6. loglik: log-likelihood
+7. likep: p-deleted log-likelihood
+8. AIC: Akaike information criterion
+9. BIC: Bayesian information criterion
+10. ICL: Integrated Complete-data Likelihood
+11. Conv: convergence or not
+12. z: posterior probabilities
+13. cluster: clustering results based on posterior probabilities
 
 # NGSM(multiple initial values).R
 Based on NGSM.R, fmix_reg_scalemix_iter function chooses the solution with the highest d-deleted log-likelihood to prevent singular or spurious solutions.
