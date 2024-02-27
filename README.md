@@ -6,7 +6,7 @@ We propose a novel approach that utilizes nonparametric Gaussian scale mixture e
 (Oh, S., & Seo, B. (2023). Semiparametric mixture of linear regressions with nonparametric Gaussian scale mixture errors. Advances in Data Analysis and Classification, 1-27.)
 
 # NGSM.R 
-Basic code for finite mixture of regressions with nonparametric Gaussian scale mixture errors.
+Basic codes for finite mixture of regressions with nonparametric Gaussian scale mixture errors.
 There are 11 functions in this file. 
 fmix_reg_scalemix function is the main function, and others are required to save if you want to use fmix_reg_scalemix function.
 
