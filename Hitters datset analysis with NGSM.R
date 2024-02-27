@@ -87,6 +87,7 @@ for(m in 1 : 3){
 }
 ngsm2_BIC  # 2
 ngsm2_ICL  # 2
+time_ngsm2
 
 ARI(ngsm2[[2]]$cluster[-c(323,324)], Hitters$cluster)
 AMI(ngsm2[[2]]$cluster[-c(323,324)], Hitters$cluster)
