@@ -50,4 +50,5 @@ Motor trend car road tests (mtcars) dataset analysis using linear regression und
 
 # Hitters dataset analysis with NGSM.R
 Hitters dataset analysis using linear regression under NGSM errors
+
 hitters_names.Rdata should be loaded.
