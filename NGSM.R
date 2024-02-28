@@ -4,6 +4,7 @@ library(pracma)
 library(quadprog) 
 library(lsei)
 library(mixtools)
+library("RobMixReg")
 
 ################## beta_estimation ##########################################
 
